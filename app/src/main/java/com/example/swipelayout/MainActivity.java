@@ -17,15 +17,6 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    /**
-     * RecyclerView: The new recycler view replaces the list view. Its more modular and therefore we
-     * must implement some of the functionality ourselves and attach it to our recyclerview.
-     * <p/>
-     * 1) Position items on the screen: This is done with LayoutManagers
-     * 2) Animate & Decorate views: This is done with ItemAnimators & ItemDecorators
-     * 3) Handle any touch events apart from scrolling: This is now done in our adapter's ViewHolder
-     */
-
     private ArrayList<Student> mDataSet;
 
     private Toolbar toolbar;
