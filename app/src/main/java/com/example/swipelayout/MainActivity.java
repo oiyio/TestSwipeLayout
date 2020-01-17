@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.swiprecyclerview);
+        setContentView(R.layout.activity_main);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         tvEmptyView = (TextView) findViewById(R.id.empty_view);
         mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        loadData();
+        loadData();     // insert Student objects into mDataSet list
 
         if (mDataSet.isEmpty()) {
             mRecyclerView.setVisibility(View.GONE);
